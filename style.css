@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* header section  */
+header{
+    background-color:#fff4e7;
+    padding: 20px 227px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #131313;
+    font-size:2.5rem;
+    font-weight: 700;
+}
+nav .menus{
+    display: flex;
+    gap: 40px;
+}
+
+nav .menus li{
+    list-style: none;
+}
+nav .menus li a{
+    text-decoration: none;
+    color:#424242 ;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+/*=========================== 
+        resoinsive design
+==============================  */
+
+/* mobile device  */
+@media screen and (max-width:576px) {
+
+    header{
+        padding: 10px 20px;
+    }
+    nav,
+    nav .menus{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+/* tablet device  */
+@media screen and (min-width:576px) and (max-width:900px){
+    nav .menus{
+        gap: 10px;
+    }
+    
+}
