@@ -125,13 +125,13 @@ main{
     width: 90%;
 }
 .card{
-    width: 586px;
-    padding: 20px;
+   width: 580px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    margin-top: 20px;
-    
 }
+    
+
 
 .experience-title{
     border-left: 5px solid tomato;
@@ -192,6 +192,7 @@ line-height: 40px;
         flex-direction: column;
         gap: 20px;
     }
+   
     .feature-content{
         text-align: center;
         margin: 0;
@@ -207,22 +208,26 @@ line-height: 40px;
         align-items: center;
         padding: 20px;
     }
-    .experience-content{
-        text-align: justify;
-    }
-    .card{
-        width:400px;
+    .experience-title{
+        padding-left: 50px;
     }
     .experience-img img{
         width: 80%;
         margin-left: 40px;
     }
     .ten-year-experience{
-        position: relative;
-    top: -70px;
-    left: 70px;
+    position: relative;
     height: 150px;
     width: 300px;
+    }
+    .experience-content{
+        /* text-align: center; */
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card{
+        width: 400px;
     }
 }
 
@@ -233,12 +238,9 @@ line-height: 40px;
     nav .menus{
         gap: 10px;
     }
-    .ten-year-experience{
-        position: relative;
-    top: -70px;
-    left: 70px;
-    height: 150px;
-    width: 300px;
-    }
-    
+
+}
+
+.hide{
+    display: none;
 }
