@@ -3,6 +3,45 @@
     padding: 0;
 }
 
+/* sherd style  */
+.section-title{
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.section-description{
+    color:  #727272;
+    font-size: 1rem;
+    margin: 33px 0;
+ }
+ .primary-btn{
+    padding:21px 24px;
+    color:#fff;
+    background-color: tomato;
+    border-radius: 8px;
+    background: #FF900E;
+    outline: 0;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 37px 0;
+ }
+
+ .gray{
+    color: #424242;
+    font-size:2.5rem;
+    font-weight: 500;
+ }
+ .black{
+    columns: black;
+    font-size:2.5rem;
+    font-weight: 500;
+ }
+ .orange{
+    color: #FF900E;
+    font-size:2.5rem;
+    font-weight: 500;
+ }
 
 
 /* header section  */
@@ -36,6 +75,103 @@ nav .menus li a{
     font-weight: 500;
 }
 
+/* banner section  */
+.banner-text{
+     text-align: center;
+     margin-top: 121px;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+/* feature section  */
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.feature-section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top:85px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.feature-content{
+    margin-left:73px ;
+    width:537px;
+}
+.feature-img img{
+    width: 100%;
+}
+
+
+
+
+
+/* .experince-section  */
+
+.experince-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 121px;
+}
+
+.experience-img img{
+    width: 90%;
+}
+.card{
+    width: 586px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+    
+}
+
+.experience-title{
+    border-left: 5px solid tomato;
+    padding-left: 20px;
+    color:  #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.ten-year-experience{
+    /* padding: 42px; */
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    width: 342px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -100px;
+    left: -50px;
+}
+.ten-year{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    
+}
+.ten{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+}
+
+
 
 
 
@@ -50,9 +186,43 @@ nav .menus li a{
         padding: 10px 20px;
     }
     nav,
-    nav .menus{
+    nav .menus,
+    .feature-section,
+    .experince-section{
         flex-direction: column;
         gap: 20px;
+    }
+    .feature-content{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+   
+    .feature-img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    .experince-section{
+        align-items: center;
+        padding: 20px;
+    }
+    .experience-content{
+        text-align: justify;
+    }
+    .card{
+        width:400px;
+    }
+    .experience-img img{
+        width: 80%;
+        margin-left: 40px;
+    }
+    .ten-year-experience{
+        position: relative;
+    top: -70px;
+    left: 70px;
+    height: 150px;
+    width: 300px;
     }
 }
 
@@ -62,6 +232,13 @@ nav .menus li a{
 @media screen and (min-width:576px) and (max-width:900px){
     nav .menus{
         gap: 10px;
+    }
+    .ten-year-experience{
+        position: relative;
+    top: -70px;
+    left: 70px;
+    height: 150px;
+    width: 300px;
     }
     
 }
